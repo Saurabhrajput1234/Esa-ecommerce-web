@@ -1,0 +1,146 @@
+body {
+  background-color: #d7dee2;
+}
+
+.cart-Items {
+  margin: 30px auto;
+  width: 470px;
+  background-color: white;
+}
+
+.cart-Item-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  border-bottom: 2px solid rgb(209, 211, 211);
+  font-size: 20px;
+}
+
+.cart-item-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cart-item-image {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.cart-item-list {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 5%;
+}
+
+.product-details {
+  width: 100%;
+}
+
+
+.cart-item-add,
+.cart-item-remove {
+  width: 25px;
+  margin-right: 32px;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-item-add {
+  background-color: red;
+}
+
+.cart-item-remove {
+  background-color: green;
+}
+
+.cart-item-remove:active {
+  transform: translateY(1.2px);
+}
+
+.your-total-price {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 9%;
+  font-size: 18px;
+  font-weight: 600;
+  border-top: 2px solid rgb(209, 211, 211);
+}
+
+.total-price {
+  display: flex;
+  padding-left: 45%;
+  color: #6cb153;
+}
+
+.clear-cart {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.clear-cart-button {
+  border: none;
+  border-radius: 5px;
+  background-color: #647986;
+  height: 50px;
+  width: 82px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  margin-right: 4px;
+  animation: 0.5s ease-in-out;
+}
+
+.clear-cart-button:active {
+  transform: translateY(2px);
+  background-color: red;
+}
+
+.cart-remove:hover {
+  background-color: white;
+}
+.cart-remove {
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  height: 45px;
+  padding-left: 248px;
+}
+
+.checkout {
+  height: 55px;
+  width: 100%;
+  background-color: #6cb153;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.continue-shop {
+  height: 65px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

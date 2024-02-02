@@ -1,0 +1,89 @@
+
+/* .Home-page img {
+    height: 100%;
+    width: 100vw;
+    position: sticky;
+
+} */
+
+/* .Home-page h1 {
+    position: fixed;
+    font-family: 'Calibri', sans-serif;
+    font-size: 4rem;
+    color: #d35f5f;
+    padding-left: 29px;
+    margin: 86px;
+} */
+.Home-page{
+    padding:80px;
+    background-color:white;
+    padding-left: 110px;
+    padding-right: 110px;
+    
+}
+.banner-div{
+    display: flex;
+    ;
+}
+.products-Categories{
+    width: 30%;
+    height: 500px;
+    background-color:white;
+    border-right:1px solid #d6d6d6;
+}
+.banner-container{
+    height: 500px;
+    width: 70%;
+    background-color: white;
+    
+}
+.banner{
+    height: 380px;
+    width:800px;
+    background-color: rgb(11, 41, 67);
+    margin: 50px;
+    overflow: hidden;
+}
+.banner img{
+    height: 100vh;
+    width: 700px;
+}
+.browse-categories{
+    height: 400px;
+    border-top: 1px solid #d6d6d6;;
+}
+
+.categories-box{
+    height: 240px;
+    border-bottom: 1px solid #d6d6d6;;
+    display: flex;
+    align-items: center;
+    
+}
+.categories-type{
+    height: 130px;
+    width: 160px;
+   border-radius: 5px;
+    border: 1px solid #d6d6d6;;
+    margin-inline: 40px;
+    
+
+}
+.banner2-box{
+    height: 570px;
+    
+}
+.banner2{
+    height: 500px;
+    padding-left: 64px;
+    padding-top: 57px;
+
+}
+@media (max-width: 360px) {
+    .Home-page img {
+        width: 100%; 
+        opacity: 100%; 
+    }
+
+   
+}

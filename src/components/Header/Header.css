@@ -1,0 +1,89 @@
+.navbar {
+  background-color:white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+  height: 67px;
+  border-bottom: 1px solid #d6d6d6;
+  ;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+
+.navbar-logo {
+  color:black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 792px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  margin-right: 114px;
+}
+
+.navbar-links a {
+  padding: 15px;
+  color: gray;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  height: 2px;
+  width: 20px;
+  background-color: #fff;
+  margin: 3px 0;
+  display: block;
+}
+
+.addtoCart {
+  color: white;
+}
+
+@media screen and (max-width: 360px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 8px;
+    width: 27%;
+    text-align: center;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    background: black;
+    z-index: 1;
+    opacity: 71.9%;
+
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 180px;
+    padding-left: 20px;
+  }
+}

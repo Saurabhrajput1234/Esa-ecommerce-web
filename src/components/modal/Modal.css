@@ -1,0 +1,17 @@
+
+.modal {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 100;
+  padding-top: 66px;
+}
+
+@media (max-width: 360px) {
+  .modal {
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; 
+  }
+}

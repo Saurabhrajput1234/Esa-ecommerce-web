@@ -1,0 +1,14 @@
+.SearchBox{
+  display: flex;
+  padding-right:217px;
+  padding-top: 14px;
+
+}
+.SearchInput{
+  width: 300px;
+
+}
+.button1{
+  width: 58px;
+  height: 37px;
+}

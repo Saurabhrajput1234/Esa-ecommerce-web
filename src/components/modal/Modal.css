@@ -3,11 +3,22 @@
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   z-index: 100;
   padding-top: 58px;
   position: absolute;
-  height: 733vh;
+  min-height: 321vh;
+
+}
+.modal1 {
+  width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    padding-top: 131px;
+    min-height: 100vw;
+    position: fixed;
 
 }
 

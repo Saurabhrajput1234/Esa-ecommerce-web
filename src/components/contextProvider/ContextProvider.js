@@ -7,17 +7,19 @@ export const Context = createContext({
   response :[],
   show:false,
   SetShow:{},
+  setFoundProduct:{},
+  foundProduct:[]
 });
 
 const ContextProvider = ({ children }) => {
   const [productList, setProductList] = useState([]);
   const [fetching, setFetching] = useState(false);
   const [response,setResponse] = useState("")
-  const [show, SetShow] = useState(false);
+  const [show, SetShow] = useState(true);
+  const [foundProduct, setFoundProduct] = useState('');
 
 //  Memoize the setShow function to prevent unnecessary re-renders
 //  const SetShow = useMemo(() => setShow, []);
-
 
   
   useEffect(() => {
@@ -32,7 +34,7 @@ const ContextProvider = ({ children }) => {
 
   return (
     <>
-      <Context.Provider value={{ productList, fetching,setResponse,response,SetShow,show}}>
+      <Context.Provider value={{ productList, fetching,setResponse,response,SetShow,show,setFoundProduct,foundProduct}}>
         {children}
       </Context.Provider>
     </>

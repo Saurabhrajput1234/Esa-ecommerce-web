@@ -10,7 +10,6 @@ import '../../App.css';
 
 
 const Routers = (props) => {
-  console.log(props.show1,"router")
   return (
     <div className='app-css'>
       <Routes>

@@ -6,7 +6,7 @@ import Cart from '../Cart/Cart';
 
 const Modal = (props) => {
 
-  console.log(props.show1,"this is model")
+ 
 
 
   if (!props.show1) {

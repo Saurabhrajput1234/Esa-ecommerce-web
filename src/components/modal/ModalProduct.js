@@ -11,7 +11,7 @@ const ModalProduct= ({product,show,setShow}) => {
   }
   return (
     <> <div 
-    className="modal">
+    className="modal1">
 
      <FoundProduct product={product} show={show} setShow ={setShow}  />
     </div>

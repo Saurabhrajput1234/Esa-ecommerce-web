@@ -5,10 +5,10 @@ import ErrorPage from '../Products/ErrorPage';
 import "./searchProduct.css"
 
 const SearchProduct = () => {
-  const { productList,SetShow,show,response} = useContext(Context);
+  const { productList,SetShow,show,response,foundProduct,setFoundProduct} = useContext(Context);
 
   const [searchProduct, setSearchProduct] = useState("");
-  const [foundProduct, setFoundProduct] = useState('');
+  
    
   const handleInput = (e)=>{
     setSearchProduct(e.target.value)
@@ -31,6 +31,7 @@ const SearchProduct = () => {
   )}
   }
 
+
   
 
   return (
@@ -41,16 +42,7 @@ const SearchProduct = () => {
           <input className="SearchInput"  name='SearchName' type="search" placeholder="Search" onChange={handleInput} aria-label="Search" />
           <button className="button1" type="submit"  >Search</button></div>
       </form>
-      {foundProduct  ? (
-        
-       
-       
-        <ModalProduct product={foundProduct} show={show} setShow={SetShow}/>
-        
-      ) : (
-        ""
-      )}
-
+      
     </div>
     </>
   )

@@ -18,7 +18,7 @@ const Cart = (props) => {
           </button>
         </div>
 
-        <div className="clear-cart">
+        {/* <div className="clear-cart">
           {props.cartItem.length >= 1 && (
             <button
               className="clear-cart-button"
@@ -27,24 +27,25 @@ const Cart = (props) => {
               Remove
             </button>
           )}
-        </div>
+        </div> */}
         {props.cartItem.length === 0 && (
           <div className="cart-item-empty">No items are added</div>
         )}
 
         {props.cartItem.map((item) => (
           <div key={item.id} className="cart-item-list">
-            <div>
+            <div className="product-box" style={{height:"",width:"150px",}}>
               <img
+              
                 className="cart-item-image"
                 src={item.images[3]}
                 alt={item.title}
               />
-            </div>
-            <div className="product-details">
-              <div className="cart-item-name">{item.title}</div>
+              </div>
+            
+              <div className="cart-item-name product-box">{item.title}</div>
 
-              <div className="cart-item-function">
+              <div className="cart-item-function product-box">
                 <button
                   className="cart-item-add"
                   onClick={() => props.handleAddProduct(item)}
@@ -58,11 +59,11 @@ const Cart = (props) => {
                   -
                 </button>
               </div>
-              <div className="cart-item-price">
+              <div className="cart-item-price product-box">
                 {item.quantity} * ${item.price}
               </div>
             </div>
-          </div>
+          
         ))}
       
         <div className="suggest-product"></div>

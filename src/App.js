@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Header from "./components/Header/Header";
 import Routers from "./components/Routers/Routers";
 import { BrowserRouter as Router } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Modal from "./components/modal/Modal";
-import ContextProvider from "./components/contextProvider/ContextProvider";
 import './App.css';
+import { Context } from './components/contextProvider/ContextProvider';
+import ModalProduct from "./components/modal/ModalProduct";
 
 
 
 const App = () => {
-  
+  const {SetShow,show,foundProduct} = useContext(Context);
   const [cartItem, setCartItems] = useState([]);
   const [show1, setShow1] = useState(false);
-  console.log(show1)
 
   const handleAddProduct = (product) => {
     const productExist = cartItem.find((item) => item.id === product.id);
@@ -51,7 +51,7 @@ const App = () => {
     <>
       <div >
         <div id="signInDiv"></div>
-        <ContextProvider>
+        
           <Router >
             <Header
               cartItem={cartItem}
@@ -73,6 +73,12 @@ const App = () => {
             
 
             </Modal>
+            {foundProduct  ? (
+        <ModalProduct product={foundProduct} show={show} setShow={SetShow}/>
+        
+      ) : (
+        ""
+      )}
             
             <Routers
               cartItem={cartItem}
@@ -86,7 +92,7 @@ const App = () => {
             
           </Router>
           <Footer />
-        </ContextProvider>
+        
       </div>
     </>
   );

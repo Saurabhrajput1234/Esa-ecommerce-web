@@ -13,6 +13,7 @@ const App = () => {
   
   const [cartItem, setCartItems] = useState([]);
   const [show1, setShow1] = useState(false);
+  console.log(show1)
 
   const handleAddProduct = (product) => {
     const productExist = cartItem.find((item) => item.id === product.id);
@@ -61,21 +62,27 @@ const App = () => {
               handleRemoveProduct={handleRemoveProduct}
               handleCartClear={handleCartClear}
             />
+             <Modal cartItem={cartItem}
+              onShow1={() => setShow1(true)}
+              show1={show1}
+              onClose1={() => setShow1(false)}
+              handleAddProduct={handleAddProduct}
+              handleRemoveProduct={handleRemoveProduct}
+              handleCartClear={handleCartClear}
+            >
+            
+
+            </Modal>
+            
             <Routers
-             
               cartItem={cartItem}
+              show1={show1}
+              onClose1={() => setShow1(false)}
               handleAddProduct={handleAddProduct}
               handleRemoveProduct={handleRemoveProduct}
               handleCartClear={handleCartClear}
             />
-            <Modal
-              show1={show1}
-              onClose1={() => setShow1(false)}
-              cartItem={cartItem}
-              handleAddProduct={handleAddProduct}
-              handleRemoveProduct={handleRemoveProduct}
-              handleCartClear={handleCartClear}
-            ></Modal>
+           
             
           </Router>
           <Footer />

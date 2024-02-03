@@ -3,16 +3,19 @@
 .signin{
   background-color:white;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   height: 100vh;
+  padding-left: 23px;
+  padding-top: 76px;
 }
 
 .signin-form{
   background-color: white;
   padding: 50px;
-  text-align: center;
+  text-align: start;
   border-radius: 10px;
+  padding-left: 86px;
 }
 
 .container {
@@ -25,14 +28,13 @@
 }
 
 h2 {
-  text-align: center;
   color: #333;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 
 label {
@@ -40,13 +42,13 @@ label {
   color: #555;
 }
 
-input {
+.signin-form input {
   padding: 10px;
   margin-bottom: 16px;
-  width: 100%;
+  width: 250px;
   box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: none;
+  border-bottom: 2px solid gray;
 }
 
 .buttonLogin {
@@ -72,4 +74,8 @@ input {
 .image-box img{
   height: 100%;
   width: 100%;
+}
+input{
+  
+  
 }

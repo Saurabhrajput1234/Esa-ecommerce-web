@@ -28,11 +28,15 @@ const Header = (props) => {
           <a href="/Products">Product</a>
           <a href="/signup">Signin</a>
 
+         <div style={{display:"flex"}}>
 
-          <div style={{ color: "white" }} className='/cart' onClick={props.onShow1} ><MdAddShoppingCart style={{color:"grey"}} />
-            <span className='cart-length'>{props.cartItem.length === 0 ? "" : props.cartItem.length}</span>
+          <div  style={{ color: "white" , "font-size":"1.3rem" }} className='/cart' onClick={props.onShow1} ><MdAddShoppingCart style={{color:"grey"}} />
+          
 
           </div>
+          <div><span >{props.cartItem.length === 0 ? "" : <div className="cart-length"><p>{props.cartItem.length}</p></div> }</span> 
+           </div>
+            </div>
 
 
         </div>

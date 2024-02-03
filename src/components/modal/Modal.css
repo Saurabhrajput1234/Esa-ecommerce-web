@@ -5,7 +5,10 @@
   display: flex;
   justify-content: flex-end;
   z-index: 100;
-  padding-top: 66px;
+  padding-top: 58px;
+  position: absolute;
+  height: 733vh;
+
 }
 
 @media (max-width: 360px) {

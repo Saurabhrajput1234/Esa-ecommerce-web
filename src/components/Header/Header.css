@@ -55,6 +55,23 @@
 .addtoCart {
   color: white;
 }
+.cart-length{
+  color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: red;
+  font-size: 0.7rem;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  margin-left: -4px;
+
+}
+p {
+  all: unset;
+  padding: 4px;
+}
 
 @media screen and (max-width: 360px) {
   .navbar-links {

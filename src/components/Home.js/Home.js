@@ -17,7 +17,7 @@ import category6 from '../pics/Category-Computer.svg'
 
 
 
-function Home() {
+function Home(props) {
 
   const slides = [
     <img src={product1} alt="Slide 1" />,
@@ -57,7 +57,7 @@ function Home() {
         <img src={product3} alt="" />
       </div>
      </div>
-     <Products/>
+     <Products handleAddProduct={props.handleAddProduct}/>
     </div>
 
 

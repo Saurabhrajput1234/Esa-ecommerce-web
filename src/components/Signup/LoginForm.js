@@ -47,20 +47,24 @@ const LoginForm = () => {
       </div>
       <div className="signin-form">
         <h2>Log in to Exclusive</h2>
+        <p>Enter your details below</p>
         <form>
+         
           <label>
-            Username:
+            
             <input
               type="text"
+              placeholder="Email or Username "
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
           </label>
           <br />
           <label>
-            Password:
+           
             <input
               type="password"
+              placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />

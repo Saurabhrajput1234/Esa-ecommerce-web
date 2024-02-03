@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Modal from "./components/modal/Modal";
 import ContextProvider from "./components/contextProvider/ContextProvider";
+import './App.css';
 
 
 
@@ -47,15 +48,12 @@ const App = () => {
 
   return (
     <>
-      <div>
+      <div >
         <div id="signInDiv"></div>
         <ContextProvider>
-          <Router>
+          <Router >
             <Header
               cartItem={cartItem}
-              
-             
-              
               onShow1={() => setShow1(true)}
               show1={show1}
               onClose1={() => setShow1(false)}
@@ -78,8 +76,9 @@ const App = () => {
               handleRemoveProduct={handleRemoveProduct}
               handleCartClear={handleCartClear}
             ></Modal>
-            <Footer />
+            
           </Router>
+          <Footer />
         </ContextProvider>
       </div>
     </>

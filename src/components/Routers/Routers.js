@@ -4,13 +4,14 @@ import Home from '../Home.js/Home';
 import Modal from '../modal/Modal';
 import Products from '../Products/Products';
 import LoginForm from '../Signup/LoginForm';
+import '../../App.css';
 
 
 
 
 const Routers = (props) => {
   return (
-    <div>
+    <div className='app-css'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Products' element={<Products handleAddProduct={props.handleAddProduct} />} />

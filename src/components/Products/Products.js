@@ -20,7 +20,7 @@ const Products = (props) => {
     <>
       {fetching && <LoadingSpinner />}
 
-      {!fetching && (<>
+      {!fetching && (<div className="products-background">
         <div className="products-heading">
         <h3 style={{color:"red",paddingTop:"30px"}}>Our Products</h3>
         <h1>Explore Our Products</h1>
@@ -36,7 +36,7 @@ const Products = (props) => {
             />
           ))}
         </div>
-        </>
+        </div>
       )}
     </>
   );

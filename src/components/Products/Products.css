@@ -1,3 +1,8 @@
+
+.products-background{
+    background-color: white;
+    
+}
 .products{
     width: 100%;
     display: flex;

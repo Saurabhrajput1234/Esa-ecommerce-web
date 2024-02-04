@@ -29,9 +29,9 @@ function Home(props) {
   }
 
   const slides = [
-    <img src={product1} alt="Slide 1" />,
-    <img src={product2} alt="Slide 2" />,
-    <img src={product4} alt="Slide 3" />,
+    <img src={product4} alt="Slide 1" />,
+    <img src={product3} alt="Slide 2" />,
+   
     
   ];
 

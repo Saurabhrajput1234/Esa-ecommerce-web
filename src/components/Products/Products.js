@@ -9,12 +9,12 @@ import ErrorPage from "./ErrorPage";
 const Products = (props) => {
   const { productList, fetching,response} = useContext(Context);
 
-  if(response.length===0)
-  { return(
-    <>
-     <ErrorPage/>
-    </>
-  )}
+  // if(response.length===0)
+  // { return(
+  //   <>
+  //    <ErrorPage/>
+  //   </>
+  // )}
 
   return (
     <>

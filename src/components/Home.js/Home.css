@@ -25,26 +25,43 @@
     ;
 }
 .products-Categories{
-    width: 30%;
+    width: 20%;
     height: 364px;
     background-color:white;
     border-right:1px solid #d6d6d6;
+    text-decoration: none;
+    padding-top: 24px;
 }
+.products-Categories li{
+    list-style: none;
+    
+}
+.products-Categories ul{
+    
+}
+.products-Categories a {
+    display: block;
+    color: black;
+    text-align: start;
+    padding: 10px 1px;
+    text-decoration: none;
+  }
+
 .banner-container{
     height: 500px;
-    width: 70%;
+    width: 80%;
     background-color: white;
     
 }
 .banner{
-    height: 310px;
-    width:800px;
+    height: 336px;
+    width: 856px;
     background-color: rgb(11, 41, 67);
     margin: 50px;
     overflow: hidden;
 }
 .banner img{
-    width: 800px;
+    width: 856px;
 }
 .browse-categories{
     height: 400px;

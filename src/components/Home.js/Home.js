@@ -47,7 +47,17 @@ function Home(props) {
   return (<>
     <div className='Home-page' >
     <div className="banner-div">
-     <div className="products-Categories">
+     <div className="products-Categories" style={{}}>
+     <ul>
+        <li><a href="#filter" onClick={()=>setCategory("smartphones")}>Smartphones</a></li>
+        <li><a href="#filter" onClick={()=>setCategory("laptops")}>Laptops</a></li>
+        <li><a href="#filter" onClick={()=>setCategory("fragrances")}>Fragrances</a></li>
+        <li><a href="#filter" onClick={()=>setCategory("skincare")}>Skincare</a></li>
+        <li><a href="#filter" onClick={()=>setCategory("smartphones")}>Groceries</a></li>
+        <li><a href="#filter" onClick={()=>setCategory("groceries")}>Home-decoration</a></li>
+        <li><a href="#filter" onClick={()=>setCategory("home-decoration")}>Groceries</a></li>
+        <li><a href="#">Contect</a></li>
+      </ul>
 
      </div>
      <div className="banner-container">
@@ -69,7 +79,9 @@ function Home(props) {
         
       </div>
      </div>
+     <div id='filter'>
      <FilterProductList handleAddProduct={props.handleAddProduct}/>
+     </div>
      <div className="banner2-box">
       <div className="banner2">
         <img src={product3} alt="" />

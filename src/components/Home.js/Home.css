@@ -68,6 +68,10 @@
     justify-content: center;
     align-items: center;
 }
+.selected {
+    background-color: #DB4444;
+    color: white;
+  }
 
 .banner2-box{
     height: 570px;

@@ -1,11 +1,10 @@
 import React, { useContext, useState } from 'react'
 import { Context } from '../contextProvider/ContextProvider';
-import ModalProduct from '../modal/ModalProduct';
 import ErrorPage from '../Products/ErrorPage';
 import "./searchProduct.css"
 
 const SearchProduct = () => {
-  const { productList,SetShow,show,response,foundProduct,setFoundProduct} = useContext(Context);
+  const { productList,SetShow,response,setFoundProduct} = useContext(Context);
 
   const [searchProduct, setSearchProduct] = useState("");
   

@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 
+
 export const Context = createContext({
   productList: [],
   fetching: false,
@@ -8,7 +9,10 @@ export const Context = createContext({
   show:false,
   SetShow:{},
   setFoundProduct:{},
-  foundProduct:[]
+  foundProduct:[],
+  setCategory:{},
+  category:'',
+  filterProductsByCategory:{}
 });
 
 const ContextProvider = ({ children }) => {
@@ -17,6 +21,10 @@ const ContextProvider = ({ children }) => {
   const [response,setResponse] = useState("")
   const [show, SetShow] = useState(true);
   const [foundProduct, setFoundProduct] = useState('');
+  const[category,setCategory]=useState('');
+
+
+  console.log(category,"category")
 
 //  Memoize the setShow function to prevent unnecessary re-renders
 //  const SetShow = useMemo(() => setShow, []);
@@ -32,9 +40,22 @@ const ContextProvider = ({ children }) => {
       });
   }, []);
 
+  const filterProductsByCategory = () => {
+  
+    const filteredProducts = productList.filter(product => product.category === category);
+    
+    return filteredProducts;
+    
+  };
+ 
+  console.log(filterProductsByCategory() ,"dbfkvbfkjb")
+  
+ 
+
+
   return (
     <>
-      <Context.Provider value={{ productList, fetching,setResponse,response,SetShow,show,setFoundProduct,foundProduct}}>
+      <Context.Provider value={{ productList, fetching,setResponse,response,SetShow,show,setFoundProduct,foundProduct,setCategory,filterProductsByCategory,category}}>
         {children}
       </Context.Provider>
     </>

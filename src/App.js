@@ -10,6 +10,7 @@ import ModalProduct from "./components/modal/ModalProduct";
 
 
 
+
 const App = () => {
   const {SetShow,show,foundProduct} = useContext(Context);
   const [cartItem, setCartItems] = useState([]);
@@ -79,6 +80,8 @@ const App = () => {
       ) : (
         ""
       )}
+
+      
             
             <Routers
               cartItem={cartItem}

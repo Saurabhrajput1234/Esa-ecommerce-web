@@ -25,7 +25,7 @@ const FoundProduct = (props) => {
       <div className='product-detail'>
       <h1>{product.title}</h1>
       <div className="product-description" style={{height:"300px"}}>
-        <img src={product.images[4]} alt="" />
+        <h5>Description:{product.description}</h5>
       </div>
       <h3>Price : {product.price}</h3>
       </div>

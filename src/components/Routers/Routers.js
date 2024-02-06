@@ -5,6 +5,9 @@ import Modal from '../modal/Modal';
 import Products from '../Products/Products';
 import LoginForm from '../Signup/LoginForm';
 import '../../App.css';
+import Register from '../Signup/Register';
+import Dashboard from '../Signup/Dashboard';
+import ErrorPage from '../Products/ErrorPage';
 
 
 
@@ -18,7 +21,10 @@ const Routers = (props) => {
         <Route path='/modal' element={<Modal cartItem={props.cartItem} handleAddProduct={props.handleAddProduct} show1={props.show1}
         
               onClose1={props.onClose1} handleRemoveProduct={props.handleRemoveProduct} handleCartClear={props.handleCartClear} />} />
-        <Route path='/signup' element={<LoginForm />} />
+        <Route path='/signup' element={<Register />} />
+        <Route path='/signin' element={<LoginForm />} />
+        <Route path='/dash' element={<Dashboard />} />
+      <Route path="/error" element={<ErrorPage/>}/>
       </Routes>
     </div>
   )

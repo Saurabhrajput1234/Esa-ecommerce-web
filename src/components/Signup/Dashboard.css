@@ -1,0 +1,33 @@
+
+
+.profile{
+  display: flex;
+  height: 266px;
+  border: 1px solid gray;
+  width: 573px;
+  padding: 45px;
+  border-radius: 5px;
+ 
+}
+#userImage{
+  height: 10rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 4px;
+  margin: 8px;
+}
+.main{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+ align-items: center;
+
+}
+.edit-profile{
+  height: 30px;
+ margin: 0.5rem;
+  background: rgb(237, 237, 237);
+  padding: 0;
+  width: 100px;
+}

@@ -3,18 +3,12 @@ import "./Products.css";
 import { Context } from "../contextProvider/ContextProvider";
 import LoadingSpinner from "./LoadingSpinner";
 import ProductCard from "./ProductCard";
-import ErrorPage from "./ErrorPage";
+
 
 
 const Products = (props) => {
-  const { productList, fetching,response} = useContext(Context);
+  const { productList, fetching} = useContext(Context);
 
-  // if(response.length===0)
-  // { return(
-  //   <>
-  //    <ErrorPage/>
-  //   </>
-  // )}
 
   return (
     <>

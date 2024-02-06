@@ -12,10 +12,13 @@ export const Context = createContext({
   foundProduct:[],
   setCategory:{},
   category:'',
-  filterProductsByCategory:{}
+  filterProductsByCategory:{},
+  setLoginData: {},
+  loginData: [],
 });
 
 const ContextProvider = ({ children }) => {
+  const [loginData, setLoginData] = useState();
   const [productList, setProductList] = useState([]);
   const [fetching, setFetching] = useState(false);
   const [response,setResponse] = useState("")
@@ -48,14 +51,14 @@ const ContextProvider = ({ children }) => {
     
   };
  
-  console.log(filterProductsByCategory() ,"dbfkvbfkjb")
+  
   
  
 
 
   return (
     <>
-      <Context.Provider value={{ productList, fetching,setResponse,response,SetShow,show,setFoundProduct,foundProduct,setCategory,filterProductsByCategory,category}}>
+      <Context.Provider value={{ productList, fetching,setResponse,response,SetShow,show,setFoundProduct,foundProduct,setCategory,filterProductsByCategory,category,loginData,setLoginData}}>
         {children}
       </Context.Provider>
     </>

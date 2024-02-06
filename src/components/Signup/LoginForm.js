@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import "./LoginForm.css";
 import { Context } from "../contextProvider/ContextProvider";
@@ -7,41 +8,52 @@ import loginImg from '../pics/login-img.svg';
 const LoginForm = () => {
 
   const {setResponse} = useContext(Context);
-
   const history = useNavigate();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+
+  const apiUrl = process.env.REACT_APP_BACKEND_URL || 'https://social-soso-backend-1.onrender.com';
   
 
-  const handleLogin = async () => {
+ const [values,setValues] = useState({
+    email: "",
+    password: "",
+  });
+  
+  const handleInput = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
 
+  const handleLogin = async (e) => {
+    e.preventDefault();
 
-    const response = await fetch("https://dummyjson.com/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    const {email,password}= values;
+
+    const response = await fetch(`${apiUrl}/login`,{
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json"
       },
-      body: JSON.stringify({
-        username,
-        password,
-      }),
-    })
+      body:JSON.stringify({
+        email,password
+      })
+
+     })
 
     const result = await response.json();
+    console.log(result,"data")
 
-    if (response.ok) {
-      alert("login Successful")
+    if (result.status === 201) {
+      
       localStorage.setItem("usersdatatoken",
-        result.token);
+        result.result.token);
         setResponse(result)
-      history("/Products");
+      history("/dash");
+      setValues({...values,email:"",password:""});
     }
-  };
+ };
 
   return (
     <div className="signin">
-{/* <pre><h3>login with:  username: 'kminchelle',
-          password: '0lelplR' </h3></pre> */}
+
       <div className="image-box">
         <img src={loginImg} alt="" />
       </div>
@@ -53,10 +65,11 @@ const LoginForm = () => {
           <label>
             
             <input
-              type="text"
+              type="email"
+              name="email"
               placeholder="Email or Username "
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              onChange={handleInput}
+              required
             />
           </label>
           <br />
@@ -64,9 +77,10 @@ const LoginForm = () => {
            
             <input
               type="password"
+              name="password"
               placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={handleInput}
+              required
             />
           </label>
           <br />
@@ -75,7 +89,7 @@ const LoginForm = () => {
             Login
           </button>
           <div>
-          <p style={{color:"blue"}}>Create new account</p>
+          <Link to="/signup"><p style={{color:"blue"}}>Create new account</p></Link>
           </div>
           </div>
         </form>
@@ -85,3 +99,5 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
+
+

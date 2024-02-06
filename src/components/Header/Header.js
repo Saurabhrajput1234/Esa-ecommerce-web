@@ -4,6 +4,7 @@ import "./Header.css";
 import { useState } from 'react';
 import SearchProduct from './SearchProduct';
 import { MdAddShoppingCart } from "react-icons/md";
+import { VscAccount } from "react-icons/vsc";
 
 
 
@@ -20,13 +21,17 @@ const Header = (props) => {
       <div className="navbar-container">
         <div ><Link to="/" className="navbar-logo">
           Assignment
+          
         </Link></div>
+       <Link to="/dash"><div className="profile1" > 
+       <VscAccount style={{"font-size":"2.5rem" ,"padding-top":"13px",color:"gray"}} /></div></Link>
         <div className={`navbar-links ${isNavbarOpen ? 'active' : ''}`}>
-
+        
           <SearchProduct />
           <a href="/">Home</a>
           <a href="/Products">Product</a>
-          <a href="/signup">Signin</a>
+          
+          <a href="/signin">Signin</a>
 
          <div style={{display:"flex"}}>
 
@@ -40,7 +45,7 @@ const Header = (props) => {
 
 
         </div>
-
+        
 
         <div className="navbar-toggle" onClick={toggleNavbar}>
           <span></span>

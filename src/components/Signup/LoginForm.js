@@ -61,7 +61,7 @@ const LoginForm = () => {
       </div>
       <div className="signin-form">
         <h2>Log in to Exclusive</h2>
-        <div><GoogleLoginComponent/></div>
+        {/* <div><GoogleLoginComponent/></div> */}
         <p>Enter your details below</p>
         <form>
          

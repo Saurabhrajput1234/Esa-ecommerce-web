@@ -12,3 +12,24 @@
   width: 58px;
   height: 37px;
 }
+
+@media screen and (max-width: 360px) {
+ 
+  .SearchInput {
+    width: 129px;
+    height: 32px;
+  }
+  .button1 {
+    width: 47px;
+    height: 32px;
+  }
+  .SearchBox {
+  
+    width: 92px;
+    height: 32px;
+    display: flex;
+  padding-right: 93px;
+  padding-top: 14px;
+}
+    
+  }

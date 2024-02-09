@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./LoginForm.css";
 import { Context } from "../contextProvider/ContextProvider";
 import loginImg from '../pics/login-img.svg';
+import GoogleLoginComponent from "./GoogleLoginComponent";
 
 const LoginForm = () => {
 
@@ -56,9 +57,11 @@ const LoginForm = () => {
 
       <div className="image-box">
         <img src={loginImg} alt="" />
+
       </div>
       <div className="signin-form">
         <h2>Log in to Exclusive</h2>
+        <div><GoogleLoginComponent/></div>
         <p>Enter your details below</p>
         <form>
          

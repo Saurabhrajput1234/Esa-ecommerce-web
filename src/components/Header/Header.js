@@ -23,11 +23,12 @@ const Header = (props) => {
           Assignment
           
         </Link></div>
+        <SearchProduct />
        <Link to="/dash"><div className="profile1" > 
        <VscAccount style={{"font-size":"2.5rem" ,"padding-top":"13px",color:"gray"}} /></div></Link>
         <div className={`navbar-links ${isNavbarOpen ? 'active' : ''}`}>
         
-          <SearchProduct />
+          
           <a href="/">Home</a>
           <a href="/Products">Product</a>
           

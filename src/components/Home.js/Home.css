@@ -36,9 +36,7 @@
     list-style: none;
     
 }
-.products-Categories ul{
-    
-}
+
 .products-Categories a {
     display: block;
     color: black;
@@ -101,10 +99,90 @@
 
 }
 @media (max-width: 360px) {
+
+    
     .Home-page img {
         width: 100%; 
         opacity: 100%; 
     }
+    .Home-page {
+        background-color: white;
+    }
+    
+    .banner-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .products-Categories {
+        width: 100%;
+        border-right: none;
+        padding-top: 12px;
+        height: auto;
+    }
+    
+    .products-Categories li {
+        padding: 8px 16px;
+    }
+    
+    .products-Categories a {
+        display: block;
+        color: black;
+        text-align: start;
+        padding: 10px 1px;
+        text-decoration: none;
+    }
+    
+    .banner-container {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .banner {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .browse-categories {
+        height: auto;
+    }
+    
+    .categories-box {
+        height: auto;
+        border-bottom: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .categories-type {
+        width: calc(50% - 32px);
+        margin: 12px;
+        height: auto;
+    }
+    
+    .selected {
+        background-color: #DB4444;
+        color: white;
+    }
+    
+    .banner2-box {
+        height: auto;
+        padding: 24px;
+    }
+    
+    .banner2 {
+        height: auto;
+        padding: 24px;
+    }
+
+    
 
    
 }

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./LoginForm.css";
 import { Context } from "../contextProvider/ContextProvider";
 import loginImg from '../pics/login-img.svg';
-import GoogleLoginComponent from "./GoogleLoginComponent";
+// import GoogleLoginComponent from "./GoogleLoginComponent";
 
 const LoginForm = () => {
 

@@ -48,7 +48,7 @@ function Home(props) {
     <div className='Home-page' >
     <div className="banner-div">
      <div className="products-Categories" style={{}}>
-     <ul>
+     
         <li><a href="#filter" onClick={()=>setCategory("smartphones")}>Smartphones</a></li>
         <li><a href="#filter" onClick={()=>setCategory("laptops")}>Laptops</a></li>
         <li><a href="#filter" onClick={()=>setCategory("fragrances")}>Fragrances</a></li>
@@ -57,7 +57,7 @@ function Home(props) {
         <li><a href="#filter" onClick={()=>setCategory("groceries")}>Home-decoration</a></li>
         <li><a href="#filter" onClick={()=>setCategory("home-decoration")}>Groceries</a></li>
         <li><a href="#">Contect</a></li>
-      </ul>
+      
 
      </div>
      <div className="banner-container">

@@ -114,16 +114,24 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .banner-container {
+        height: 180px;
+       
+      }
     
     .products-Categories {
         width: 100%;
         border-right: none;
-        padding-top: 12px;
+        padding-top: 0px;
         height: auto;
+        display: flex;
+        background: #c73a3a;
+        border-radius: 5px;
     }
     
     .products-Categories li {
-        padding: 8px 16px;
+        padding: 1px 4px;
     }
     
     .products-Categories a {
@@ -132,6 +140,7 @@
         text-align: start;
         padding: 10px 1px;
         text-decoration: none;
+        font-size: 0.4rem;
     }
     
     .banner-container {
@@ -162,9 +171,9 @@
     }
     
     .categories-type {
-        width: calc(50% - 32px);
-        margin: 12px;
-        height: auto;
+        width: calc(21% - 36px);
+    margin: 10px;
+    height: 34px;
     }
     
     .selected {

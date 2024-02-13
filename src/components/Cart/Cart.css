@@ -156,6 +156,16 @@ body {
     background-color: white;
     border-radius: 5px;
     padding: 20px;
+    width: 320px;
+  }
+  .cart-item-image {
+    width: 82px;
+    height: 52px;
+    margin-right: 0px;
+  }
+  .product-box {
+    margin: 8px;
+    width: 92px;
   }
   .cart-remove {
     color: #fff;
@@ -166,6 +176,22 @@ body {
     color: black;
     height: 45px;
     padding-left: 146px;
+  }
+  .cart-item-list {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    font-size: 9px;
+    font-weight: 200;
+    box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.5);
+    margin-block: 13px;
+    height: 75px;
+  }
+  .cart-item-function{
+    display: flex;
+  }
+  .cart-item-add{
+    margin-right: 6px;
   }
 
 }

@@ -31,3 +31,12 @@
   padding: 0;
   width: 100px;
 }
+
+@media (max-width:360){
+  .profile {
+    display: block;
+    height: 433px;
+    width: 200px;
+    padding: 62px;
+  }
+}

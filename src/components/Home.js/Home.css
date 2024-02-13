@@ -66,6 +66,7 @@
     border-top: 1px solid #d6d6d6;;
 }
 
+
 .categories-box{
     height: 240px;
     border-bottom: 1px solid #d6d6d6;;
@@ -119,13 +120,15 @@
         height: 180px;
        
       }
+   
     
     .products-Categories {
+        display:none ;
         width: 100%;
         border-right: none;
         padding-top: 0px;
         height: auto;
-        display: flex;
+        display: none;
         background: #c73a3a;
         border-radius: 5px;
     }
@@ -190,6 +193,7 @@
         height: auto;
         padding: 24px;
     }
+   
 
     
 

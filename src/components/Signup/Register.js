@@ -60,7 +60,7 @@ const Register = () => {
   };
 
   return (
-    <div className="signin">
+    <div className="signup">
 
       <div className="image-box">
         <img src={loginImg} alt="" />

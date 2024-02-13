@@ -15,7 +15,7 @@ const ProductCard = (props) => {
         <div style={{display:"flex"}}>
           <h3 className='product-price'>${product.price}</h3>
           <div>
-          <button className='product-add-button' onClick={() => props.handleAddProduct(product)}>add to Cart</button>
+          <button className='product-add-button' onClick={() => props.handleAddProduct(product)}>add</button>
         </div>
         </div>
         

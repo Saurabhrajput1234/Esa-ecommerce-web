@@ -1,9 +1,9 @@
 .SearchProduct{
-  height: 575px;
   width: 800px;
   background: white;
   border-radius: 5px;
   overflow: hidden;
+  height: 900px;
 
 }
 .product{
@@ -18,4 +18,20 @@
 .product-img img{
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 360px) {
+  .product{
+    display: block;
+    padding: 23px;
+  }
+  .product-img {
+    height: 392px;
+    width: 100%;
+  }
+  .SearchProduct{
+    height: 900px;
+  
+  }
+
 }

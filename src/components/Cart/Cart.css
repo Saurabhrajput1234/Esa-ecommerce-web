@@ -4,7 +4,6 @@ body {
 
 .cart-Items {
   margin: 30px auto;
-  width: 1000px;
   background-color: white;
   border-radius: 5px;
   padding: 80px;
@@ -149,4 +148,24 @@ body {
 .product-box{
   margin: 20px;
   width: 200px;
+}
+
+@media (max-width:360px){
+  .cart-Items {
+    margin: 94px auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .cart-remove {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    height: 45px;
+    padding-left: 146px;
+  }
+
 }

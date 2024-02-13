@@ -1,6 +1,6 @@
 
 
-.signin{
+.signup{
   background-color:white;
   display: flex;
   align-items: start;
@@ -77,5 +77,28 @@ label {
   width: 100%;
 }
 
+@media (max-width : 360px){
+  .image-box {
+    height: 296px;
+    width: 477px;
+  }
 
+  .signup{
+    background-color:white;
+    display: block;
+    padding-top: 28px;
+   
+  }
+  .image-box img {
+    height: 100%;
+    width: 57%;
+  }
+  .signin-form {
+    background-color: white;
+    padding: 4px;
+    text-align: start;
+    border-radius: 10px;
+    padding-left: 12px;
+  }
+}
 

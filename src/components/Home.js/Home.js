@@ -22,6 +22,7 @@ import FilterProductList from './FilterProductList';
 function Home(props) {
   const {setCategory,} = useContext(Context);
   const [selectedCard, setSelectedCard] = useState(null);
+  console.log(selectedCard,"ddd")
   
   const handleCardClick = (card)=>{
     setCategory(card.category);
@@ -80,7 +81,7 @@ function Home(props) {
       </div>
      </div>
      <div id='filter'>
-     <FilterProductList handleAddProduct={props.handleAddProduct}/>
+     <FilterProductList selectedCard={selectedCard} handleAddProduct={props.handleAddProduct}/>
      </div>
      <div className="banner2-box">
       <div className="banner2">

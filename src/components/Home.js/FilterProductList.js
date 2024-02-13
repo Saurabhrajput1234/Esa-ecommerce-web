@@ -6,7 +6,15 @@ import ProductCard from '../Products/ProductCard';
 
 const FilterProductList = (props)=>{
   const {category,filterProductsByCategory} = useContext(Context);
-  console.log(filterProductsByCategory(),"11212b")
+
+  if(props.selectedCard == null)
+  {
+    return(
+      <>
+        
+      </>
+    )
+  }
   
   return(<>
   

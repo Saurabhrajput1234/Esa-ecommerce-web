@@ -12,24 +12,24 @@ const Cart = (props) => {
     0
   );
   
-  if(!loginData)
-  { return(
+  // if(!loginData)
+  // { return(
     
-    <div>
-      <div className="cart-Items">
-    <div className="cart-Item-header">
-          your Cart ( )
-          <button className="cart-remove" onClick={props.onClose1}>
-            ×
-          </button>
-        </div>
+  //   <div>
+  //     <div className="cart-Items">
+  //   <div className="cart-Item-header">
+  //         your Cart ( )
+  //         <button className="cart-remove" onClick={props.onClose1}>
+  //           ×
+  //         </button>
+  //       </div>
 
-     <ErrorPage/>
-     </div>
-     </div>
+  //    <ErrorPage/>
+  //    </div>
+  //    </div>
     
-  )}
-  else{
+  // )}
+  // else{
   return (
     <div>
       <div className="cart-Items">
@@ -104,6 +104,6 @@ const Cart = (props) => {
     </div>
   );
 };
-}
+
 
 export default Cart;

@@ -14,7 +14,7 @@ const FilterProductList = (props)=>{
 <div className="products-background">
   <div className="products-heading">
   <h3 style={{color:"red",paddingTop:"30px"}}>Our Products</h3>
-  <h1>Explore {category}</h1>
+  <h2>Explore {category}</h2>
 
   </div>
   <div className="products">

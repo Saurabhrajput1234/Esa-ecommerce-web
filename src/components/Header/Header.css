@@ -92,7 +92,7 @@ p {
       display: flex;
       background: black;
       z-index: 1;
-      opacity: 71.9%;
+      border-radius: 5px;
     
 
   }
@@ -108,7 +108,7 @@ p {
     font-size: 0.8rem;
     font-weight: bold;
     margin-right: 1px;
-    padding-left: 20px;
+    padding-left: 8px;
   }
   .SearchInput {
     width: 129px;

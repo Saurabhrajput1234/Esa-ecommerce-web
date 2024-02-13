@@ -69,7 +69,7 @@ function Home(props) {
      <div className="browse-categories">
       <div className="categories-heading">
         <h3 style={{color:"red","padding-top":"23px"}}>Categories</h3>
-        <h1>Browse By Category</h1>
+        <h2>Browse By Category</h2>
       </div>
       <div className="categories-box">
       {categoryCards.map((card)=>(

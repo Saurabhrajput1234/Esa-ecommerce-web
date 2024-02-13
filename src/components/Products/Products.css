@@ -82,8 +82,9 @@
         height: 200px;
         overflow: hidden;
         padding: 6px;
-        margin: 0px 0px;
+        margin: 4px 0px;
         background-color: white;
+        border: 1px solid;
       }
       .card-image {
         width: 100%;

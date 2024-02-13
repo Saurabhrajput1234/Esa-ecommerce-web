@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react'
 import { Context } from '../contextProvider/ContextProvider';
 import ErrorPage from '../Products/ErrorPage';
-import "./searchProduct.css"
+import "./searchProduct.css";
+import { IoMdSearch } from "react-icons/io";
 
 const SearchProduct = () => {
   const { productList,SetShow,response,setFoundProduct} = useContext(Context);
@@ -39,7 +40,7 @@ const SearchProduct = () => {
       <form className="SearchBox" role="search"  onSubmit={handleSearch} >
         <div style={{ width: "45px", display: "flex" }} >
           <input className="SearchInput"  name='SearchName' type="search" placeholder="Search" onChange={handleInput} aria-label="Search" />
-          <button className="button1" type="submit"  >Search</button></div>
+          <button className="button1" type="submit"  ><IoMdSearch style={{"height":"2rem",width:"2rem"}} /></button></div>
       </form>
       
     </div>

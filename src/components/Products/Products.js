@@ -17,7 +17,7 @@ const Products = (props) => {
       {!fetching && (<div className="products-background">
         <div className="products-heading">
         <h3 style={{color:"red",paddingTop:"30px"}}>Our Products</h3>
-        <h1>Explore Our Products</h1>
+        <h2>Explore Our Products</h2>
 
         </div>
         <div className="products">

@@ -87,18 +87,20 @@ label {
     background-color:white;
     display: block;
     padding-top: 28px;
+    height: 100vh;
    
   }
   .image-box img {
     height: 100%;
-    width: 57%;
+    width: 61%;
   }
   .signin-form {
-    background-color: white;
     padding: 4px;
+    padding-left: 4px;
     text-align: start;
     border-radius: 10px;
-    padding-left: 12px;
+    padding-left: 22px;
+  
   }
 }
 

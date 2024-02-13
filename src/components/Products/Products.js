@@ -22,7 +22,7 @@ const Products = (props) => {
         </div>
         <div className="products">
         
-          {productList.map((productItem) => (
+          {productList.slice(0,12).map((productItem) => (
             <ProductCard
               key={productItem.id}
               product={productItem}

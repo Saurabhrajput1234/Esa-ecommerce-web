@@ -1,16 +1,25 @@
 .SearchBox{
   display: flex;
-  padding-right:217px;
+  padding-right:18px;
   padding-top: 14px;
 
 }
 .SearchInput{
   width: 300px;
+  height: 32px;
+  border: 1px solid gray;
+  border-radius: 5px;
 
 }
-.button1{
-  width: 58px;
-  height: 37px;
+.button1 {
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  left: -33px;
+  position: relative;
 }
 
 @media screen and (max-width: 360px) {
@@ -25,7 +34,7 @@
   }
   .SearchBox {
   
-    width: 92px;
+    width: 40px;
     height: 32px;
     display: flex;
   padding-right: 93px;

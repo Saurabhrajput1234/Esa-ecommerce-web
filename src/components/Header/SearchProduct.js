@@ -22,13 +22,16 @@ const SearchProduct = () => {
     const foundProduct = productList.find(product => product.title.toLowerCase() === lowerCaseSearchProduct);
     setFoundProduct(foundProduct || null);
     SetShow(true)
+    // e.target.value("");
 
-    if(response.length===0)
-  { return(
-    <>
-     <ErrorPage/>
-    </>
-  )}
+
+  //   if(response.length===0)
+  // { return(
+  //   <>
+  //    <ErrorPage/>
+  //   </>
+  // )}
+  setSearchProduct('');
   }
 
 
@@ -38,9 +41,9 @@ const SearchProduct = () => {
     <>
     <div>
       <form className="SearchBox" role="search"  onSubmit={handleSearch} >
-        <div style={{ width: "45px", display: "flex" }} >
+        <div style={{ width: "276px", display: "flex" }} >
           <input className="SearchInput"  name='SearchName' type="search" placeholder="Search" onChange={handleInput} aria-label="Search" />
-          <button className="button1" type="submit"  ><IoMdSearch style={{"height":"2rem",width:"2rem"}} /></button></div>
+          <button className="button1" type="submit"  ><IoMdSearch style={{"height":"1.5rem",width:"2rem"}} /></button></div>
       </form>
       
     </div>
